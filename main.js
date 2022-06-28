@@ -11,6 +11,9 @@ const endgameEl = document.querySelector('#end-game-container');
 // Words to be displayed at random  
 const words = [
     'good',
+    'club',
+    'metric',
+    'metropolis',
     'south',
     'independent',
     'steering',
