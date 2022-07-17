@@ -87,6 +87,15 @@ const words = [
 // Initialize Time Number
 let time = 10;
 
+// initialize difficulty variable and set it to value in 
+// difficulty = localStorage.getItem('difficulty') !== null ? localStorage.getItem('difficulty') : 'Easy';
+
+// Set selected value of difficulty
+// difficultySelect.value = localStorage.getItem('difficulty') !== null ? localStorage.getItem('difficulty') : 'Easy';
+
+// Focus on input
+inputText.focus
+
 // counting down time
 const timeInterval = setInterval(updateTime, 1000);
 
@@ -153,13 +162,13 @@ inputText.addEventListener('input', e => {
     e.target.value = '';
 
     // time difficulty functionality
-    if(difficulty === 'hard'){
+    if(difficultySelect.value === 'hard'){
       time += 1;
-    } else if(difficulty === 'medium'){
+    } else if(difficultySelect.value === 'medium'){
       time += 2;
     } else {
 
-      time += 3;
+      time += 4;
     }
 
     updateTime();
